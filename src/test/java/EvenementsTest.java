@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-public class JJ {
+public class EvenementsTest {
     private Concert concert;
     private Conference conference;
     private Participant participant,participant2;

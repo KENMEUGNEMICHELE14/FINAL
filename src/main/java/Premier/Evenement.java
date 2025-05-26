@@ -29,27 +29,27 @@ public abstract class Evenement implements EvenementObservable {
 
     // Renommons les champs dans le JSON
     @JsonProperty("id")
-    private String id;
+    protected String id;
 
     @JsonProperty("nom")
-    private String nom;
+    protected String nom;
 
     // Formatage explicite des dates
    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
-    private LocalDateTime date;
+   protected LocalDateTime date;
 
    @JsonProperty("lieu")
-    private String lieu;
+   protected String lieu;
    @JsonProperty("capacity")
-    private int capaciteMax;
+   protected int capaciteMax;
 
    @JsonProperty("participants")
-    private List<ParticipantObserver> observers = new ArrayList<ParticipantObserver>();// utile pour ajouter les paticipants
+   protected List<ParticipantObserver> observers = new ArrayList<ParticipantObserver>();// utile pour ajouter les paticipants
 
    @JsonIgnore
-    private boolean estAnnule = false;
+   protected boolean estAnnule = false;
    @JsonProperty
-   private Organisateur oganisateur;
+   protected Organisateur oganisateur;
 
     public Evenement(){};
 
@@ -146,6 +146,8 @@ public abstract class Evenement implements EvenementObservable {
     public void annuler(){
         this.estAnnule = true; // Marquer l'état d'annulation
         System.out.println("Evenement annulé : " + this.getNom());
+
+
 
     }
 

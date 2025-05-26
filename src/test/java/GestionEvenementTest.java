@@ -42,6 +42,8 @@ public class GestionEvenementTest {
         }
     }*/
 
+    // Pour faire la sauvegarde je fais dabord la sérilisation, De même pour charger
+
     @Test
     void testSauvegarderConcert() throws Exception {
         // 1) Créons un evenement

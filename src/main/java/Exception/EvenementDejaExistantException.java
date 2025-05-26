@@ -2,9 +2,9 @@ package Exception;
 
 public class EvenementDejaExistantException extends RuntimeException {
 
-    public EvenementDejaExistantException(String message) {
+    public EvenementDejaExistantException(String avertissement) {
 
-        super(message);
+        super(avertissement);
     }
 
 }

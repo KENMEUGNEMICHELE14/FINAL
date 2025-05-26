@@ -1,6 +1,7 @@
 package Exception;
 
 public class CapaciteMaxAtteinteException extends Exception {
-    public CapaciteMaxAtteinteException(String s) {
+    public CapaciteMaxAtteinteException(String avertissement) {
+        super( avertissement);
     }
 }

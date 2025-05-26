@@ -9,7 +9,7 @@ import java.util.List;
 public class ParticipantObserver implements NotificationService{
 private String email;
 private List<EvenementObservable> evenementsDuParticipant=new ArrayList<EvenementObservable>();
-
+private NotificationService notificationService = this;
     public ParticipantObserver(String email) {
         this.email = email;
     }
@@ -24,6 +24,14 @@ private List<EvenementObservable> evenementsDuParticipant=new ArrayList<Evenemen
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public NotificationService getNotificationService() {
+        return notificationService;
+    }
+
+    public void setNotificationService(NotificationService notificationService) {
+        this.notificationService = notificationService;
     }
 
     @Override

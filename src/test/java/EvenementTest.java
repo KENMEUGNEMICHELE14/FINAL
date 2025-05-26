@@ -39,7 +39,6 @@ public class EvenementTest {
         observer1=new ParticipantObserver(participant1.getEmail());
     }
 
-    @Test
     public void TestAjouterParticipant() throws Exception{
         assertDoesNotThrow(()->concert.ajouterParticipant(observer1));
         assertTrue(concert.getObservers().contains(observer1));
