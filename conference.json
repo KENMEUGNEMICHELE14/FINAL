@@ -1,0 +1,10 @@
+[ {
+  "id" : "conf1",
+  "nom" : "Conference de Recyclahe",
+  "lieu" : "Yaoundé",
+  "date" : "2025-04-05 09:30:00",
+  "capacity" : 5,
+  "participants" : [ ],
+  "theme" : null,
+  "Intervenant" : null
+} ]

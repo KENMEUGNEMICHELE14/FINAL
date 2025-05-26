@@ -1,0 +1,11 @@
+[ {
+  "type": "concert",
+  "id" : "c1",
+  "nom" : "Concert de Gospel",
+  "lieu" : "Paris",
+  "artiste" : "Morijah",
+  "genreMusical" : "Gospel",
+  "date" : "2025-05-25 20:00:00",
+  "capacity" : 20,
+  "participants" : [ ]
+} ]
